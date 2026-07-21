@@ -1,0 +1,122 @@
+.gallery-intro-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:50px;
+
+    background:linear-gradient(
+        135deg,
+        #fff5f8,
+        #ffeef6,
+        #fffdfd
+    );
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.gallery-content{
+
+    max-width:900px;
+
+    background:white;
+
+    border-radius:35px;
+
+    padding:60px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(255,100,170,.15);
+
+}
+
+.gallery-content h1{
+
+    font-size:58px;
+
+    color:#ff5b95;
+
+    margin-bottom:25px;
+
+}
+
+.gallery-content h2{
+
+    font-size:50px;
+
+    color:#ff5b95;
+
+    margin:30px 0;
+
+}
+
+.gallery-content p{
+
+    font-size:23px;
+
+    color:#555;
+
+    line-height:1.9;
+
+}
+
+.gallery-verdict{
+
+    margin:40px 0;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    background:#fff5fa;
+
+    color:#ff5b95;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    box-shadow:0 10px 25px rgba(255,100,170,.12);
+
+}
+
+.gallery-content button{
+
+    margin-top:45px;
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    background:linear-gradient(
+        90deg,
+        #ff73a9,
+        #ff4f89
+    );
+
+    transition:.3s;
+
+}
+
+.gallery-content button:hover{
+
+    transform:translateY(-4px);
+
+}

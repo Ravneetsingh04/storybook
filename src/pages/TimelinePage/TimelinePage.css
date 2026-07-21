@@ -1,0 +1,69 @@
+.timeline-page{
+
+    min-height:100vh;
+
+    padding:100px 10%;
+
+    background:#fff8fb;
+
+}
+
+.timeline-title{
+
+    text-align:center;
+
+    font-size:60px;
+
+    color:#ff5c8d;
+
+    margin-bottom:80px;
+
+}
+
+.timeline{
+
+    position:relative;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:#ff8db7;
+
+    transform:translateX(-50%);
+
+}
+
+.next-btn{
+
+    display:block;
+
+    margin:80px auto;
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ff5c8d;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+}

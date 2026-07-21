@@ -1,0 +1,233 @@
+.gallery-page{
+
+    min-height:100vh;
+
+    background:linear-gradient(
+
+        135deg,
+
+        #fff5f8,
+
+        #ffeef5,
+
+        #fffdfd
+
+    );
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.gallery-counter{
+
+    margin:20px 0;
+
+    background:white;
+
+    padding:12px 30px;
+
+    border-radius:40px;
+
+    color:#ff5b95;
+
+    font-weight:700;
+
+}
+
+.gallery-buttons{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-top:35px;
+
+}
+
+.gallery-buttons button{
+
+    border:none;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        #ff73ad,
+
+        #ff4d88
+
+    );
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+}
+
+.gallery-buttons button:disabled{
+
+    background:#d8d8d8;
+
+    cursor:not-allowed;
+
+}
+
+.gallery-carousel{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:30px;
+
+    transition:transform .35s ease,
+               opacity .35s ease;
+
+}
+
+.gallery-nav{
+
+    position:absolute;
+
+    width:70px;
+
+    height:70px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #ff7ab8,
+        #ff4d8d
+    );
+
+    color:white;
+
+    font-size:36px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    z-index:100;
+
+    box-shadow:0 12px 25px rgba(255,90,150,.35);
+
+}
+.gallery-nav.left{
+
+    left:140px;
+
+}
+
+.gallery-nav.right{
+
+    right:140px;
+
+}
+
+.gallery-nav:hover{
+
+    transform:scale(1.12);
+
+}
+
+.gallery-nav:disabled{
+
+    opacity:.45;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+}
+
+.gallery-center{
+
+    width:700px;
+
+    flex-shrink:0;
+
+    z-index:5;
+
+}
+
+.gallery-preview{
+
+    width:220px;
+
+    flex-shrink:0;
+
+    opacity:.45;
+
+    transform:scale(.82);
+
+    transition:.4s;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.gallery-preview .gallery-card{
+
+    width:700px;
+
+    transform-origin:center;
+
+}
+
+.left-preview{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+
+
+.right-preview{
+
+    display:flex;
+
+    justify-content:flex-start;
+
+}
+
+.gallery-carousel.slide-left{
+
+    transform:translateX(-80px);
+
+    opacity:0;
+
+}
+
+.gallery-carousel.slide-right{
+
+    transform:translateX(80px);
+
+    opacity:0;
+
+}

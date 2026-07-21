@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@400;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.letter-page{
+    min-height:100vh;
+    width:100%;
+    overflow-x:hidden;
+    background:linear-gradient(135deg,#07101f,#0f1e39,#182848);
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+    font-family:"Poppins",sans-serif;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(1px);
+}
+
+.stars{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+}
+
+.stars::before,
+.stars::after{
+    content:"";
+    position:absolute;
+    inset:-50%;
+    background-image:
+    radial-gradient(white 1px,transparent 1px),
+    radial-gradient(white 1.5px,transparent 1.5px);
+    background-size:120px 120px,180px 180px;
+    opacity:.45;
+    animation:starsMove 120s linear infinite;
+}
+
+.stars::after{
+    animation-duration:180s;
+    opacity:.25;
+    transform:rotate(180deg);
+}
+
+@keyframes starsMove{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-300px);
+    }
+}
+
+/* ---------------- Envelope ---------------- */
+
+.envelope-container{
+    position:relative;
+    z-index:5;
+}
+
+.envelope{
+    width:380px;
+    max-width:90vw;
+    padding:45px 35px;
+    border-radius:28px;
+    text-align:center;
+    cursor:pointer;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+    transition:.4s;
+}
+
+.envelope:hover{
+    transform:translateY(-8px);
+    box-shadow:0 30px 80px rgba(0,0,0,.55);
+}
+
+.envelope-icon{
+    color:#ff6fa9;
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.envelope h1{
+    color:white;
+    font-size:2rem;
+    margin-bottom:12px;
+}
+
+.envelope p{
+    color:#d6d6d6;
+    margin-bottom:30px;
+}
+
+.envelope button{
+    padding:14px 32px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    color:white;
+    font-size:1rem;
+    font-weight:600;
+    background:linear-gradient(45deg,#ff4f8b,#ff8ab5);
+    transition:.35s;
+}
+
+.envelope button:hover{
+    transform:scale(1.08);
+}
+
+/* ---------------- Letter Card ---------------- */
+
+.letter-card{
+    position:relative;
+    z-index:5;
+    width:min(900px,95%);
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border-radius:35px;
+    padding:50px;
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 25px 80px rgba(0,0,0,.45);
+}
+
+.title{
+    color:white;
+    text-align:center;
+    font-size:2.7rem;
+    margin-bottom:45px;
+}
+
+.letter-content{
+    max-height:70vh;
+    overflow-y:auto;
+    padding-right:8px;
+}
+
+.letter-content::-webkit-scrollbar{
+    width:6px;
+}
+
+.letter-content::-webkit-scrollbar-thumb{
+    background:#ff80b5;
+    border-radius:20px;
+}
+
+.letter-content p{
+    color:#f2f2f2;
+    line-height:2;
+    font-size:1.08rem;
+    margin-bottom:18px;
+    font-family:"Caveat",cursive;
+    font-size:2rem;
+    letter-spacing:.4px;
+}
+
+.letter-content p:first-child{
+    font-size:2.6rem;
+    color:#fff;
+}
+
+/* ---------------- Ending ---------------- */
+
+.ending{
+    margin-top:60px;
+    text-align:center;
+}
+
+.heart{
+    color:#ff4b89;
+    font-size:60px;
+    margin-bottom:25px;
+    filter:drop-shadow(0 0 15px rgba(255,75,137,.8));
+}
+
+.ending p{
+    color:white;
+    font-size:1.2rem;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.next-btn{
+    border:none;
+    cursor:pointer;
+    padding:16px 38px;
+    border-radius:60px;
+    font-size:1rem;
+    font-weight:600;
+    color:white;
+    background:linear-gradient(45deg,#ff4d88,#ff8db8);
+    transition:.35s;
+    box-shadow:0 10px 30px rgba(255,75,137,.4);
+}
+
+.next-btn:hover{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 20px 45px rgba(255,75,137,.6);
+}
+
+/* ---------------- Floating Hearts ---------------- */
+
+.letter-page::before,
+.letter-page::after{
+    content:"❤";
+    position:absolute;
+    font-size:22px;
+    color:rgba(255,120,170,.35);
+    animation:floatHeart 12s linear infinite;
+}
+
+.letter-page::before{
+    left:12%;
+    bottom:-40px;
+}
+
+.letter-page::after{
+    right:18%;
+    bottom:-80px;
+    animation-delay:6s;
+}
+
+@keyframes floatHeart{
+
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    80%{
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media(max-width:768px){
+
+    .letter-card{
+        padding:30px 22px;
+    }
+
+    .title{
+        font-size:2rem;
+    }
+
+    .letter-content p{
+        font-size:1.55rem;
+        line-height:1.9;
+    }
+
+    .letter-content p:first-child{
+        font-size:2rem;
+    }
+
+    .envelope{
+        padding:35px 25px;
+    }
+
+    .envelope h1{
+        font-size:1.6rem;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .letter-card{
+        border-radius:22px;
+    }
+
+    .title{
+        font-size:1.7rem;
+    }
+
+    .letter-content{
+        max-height:65vh;
+    }
+
+    .letter-content p{
+        font-size:1.35rem;
+    }
+
+    .next-btn{
+        width:100%;
+    }
+
+}

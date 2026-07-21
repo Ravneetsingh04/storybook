@@ -1,0 +1,275 @@
+/* ===========================
+   FinalPage.css
+=========================== */
+
+.final-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #0f0c29,
+    #302b63,
+    #24243e
+  );
+
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===========================
+   Animated Stars
+=========================== */
+
+.stars {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.8) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,.6) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,.5) 1px, transparent 1px);
+
+  background-size:
+    120px 120px,
+    180px 180px,
+    250px 250px;
+
+  animation: moveStars 60s linear infinite;
+
+  opacity: .35;
+  pointer-events: none;
+}
+
+@keyframes moveStars {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-250px);
+  }
+}
+
+/* ===========================
+   Intro Card
+=========================== */
+
+.intro,
+.scene {
+  position: relative;
+  z-index: 5;
+
+  width: 100%;
+  max-width: 850px;
+
+  background: rgba(255,255,255,.08);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,.15);
+
+  border-radius: 24px;
+
+  padding: 60px 40px;
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,.35);
+}
+
+.intro-heart {
+  font-size: 70px;
+  color: #ff4b91;
+  margin-bottom: 20px;
+
+  animation: heartbeat 1.6s infinite;
+}
+
+@keyframes heartbeat {
+
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.15);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+
+  60% {
+    transform: scale(1.18);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 18px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #ececec;
+  margin-bottom: 40px;
+}
+
+/* ===========================
+   Scene Text
+=========================== */
+
+.scene p {
+  margin: 14px 0;
+
+  font-size: 2rem;
+
+  line-height: 1.6;
+
+  font-weight: 600;
+
+  letter-spacing: .4px;
+}
+
+.scene p:empty {
+  margin: 22px 0;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.bottom-buttons {
+  margin-top: 50px;
+}
+
+.continue-btn,
+.restart-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 15px 36px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: .35s ease;
+
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #ff4b91,
+    #ff7eb3
+  );
+
+  box-shadow:
+    0 10px 30px rgba(255,75,145,.35);
+}
+
+.continue-btn:hover,
+.restart-btn:hover {
+
+  transform: translateY(-4px) scale(1.03);
+
+  box-shadow:
+    0 16px 40px rgba(255,75,145,.5);
+
+}
+
+.continue-btn:active,
+.restart-btn:active {
+
+  transform: scale(.97);
+
+}
+
+/* ===========================
+   Credits
+=========================== */
+
+.credits {
+
+  margin-bottom: 35px;
+
+}
+
+.credits p {
+
+  margin: 10px 0;
+
+  font-size: 1.15rem;
+
+  color: #f5f5f5;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+
+  .intro,
+  .scene {
+    padding: 40px 25px;
+  }
+
+  .intro h1 {
+    font-size: 2.2rem;
+  }
+
+  .intro-heart {
+    font-size: 60px;
+  }
+
+  .scene p {
+    font-size: 1.35rem;
+  }
+
+  .continue-btn,
+  .restart-btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .scene p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+  }
+
+}

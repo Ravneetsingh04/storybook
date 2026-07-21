@@ -1,0 +1,344 @@
+/* ===========================
+   Birthday Page
+=========================== */
+
+.birthday-page {
+     width:100%;
+    min-height:100vh;
+    padding-top:20px;
+    overflow-x:hidden;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff0f6 0%,
+        #fff8fb 40%,
+        #fffdfd 100%
+    );
+}
+
+/* Width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff3f7;
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        #ff77aa,
+        #ff4d8d
+    );
+    border-radius: 20px;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff3b82;
+}
+
+/* ===========================
+   Center Content
+=========================== */
+
+.birthday-page .center-content {
+    text-align: center;
+    z-index: 2;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.birthday-page .birthday-title {
+    font-size:72px;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+    margin-bottom:15px;
+
+    text-transform:uppercase;
+}
+
+.birthday-page .blue {
+    color:#49a5ff;
+    text-shadow:
+    0 4px 12px
+    rgba(73,165,255,.35);
+}
+
+.birthday-page .pink {
+    color:#ff6ba6;
+
+    text-shadow:
+    0 4px 12px
+    rgba(255,107,166,.35);
+}
+
+/* ===========================
+   GIF
+=========================== */
+
+/* ===========================
+   Birthday Image
+=========================== */
+
+.birthday-page .birthday-image{
+
+    width:min(1200px,92vw);
+
+    max-height:70vh;
+
+    height:auto;
+
+    object-fit:contain;
+
+    margin:35px auto;
+
+    display:block;
+
+    border-radius:24px;
+
+    animation:popIn .9s ease;
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.20);
+
+}
+
+.birthday-image-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:30px 0;
+
+}
+
+/* ===========================
+   Message
+=========================== */
+
+.birthday-page .birthday-message {
+    font-size:24px;
+
+    color:#666;
+
+    margin-top:20px;
+
+    font-weight:500;
+}
+
+/* ===========================
+   Next Button
+=========================== */
+
+.sparkle{
+
+position:absolute;
+
+font-size:28px;
+
+animation:
+
+float 6s ease-in-out infinite;
+
+opacity:.8;
+
+}
+
+.s1{
+
+top:12%;
+left:15%;
+
+}
+
+.s2{
+
+top:18%;
+right:12%;
+
+}
+
+.s3{
+
+bottom:15%;
+left:18%;
+
+}
+
+.s4{
+
+bottom:10%;
+right:18%;
+
+}
+
+.heart{
+
+position:absolute;
+
+font-size:30px;
+
+animation:
+
+float 8s infinite;
+
+opacity:.45;
+
+}
+
+.s5{
+
+top:50%;
+left:8%;
+
+}
+
+.birthday-page .next-btn {
+    margin-top:35px;
+
+    border:none;
+
+    padding:
+
+    18px 45px;
+
+    border-radius:50px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:white;
+
+    cursor:pointer;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #ff6ba6,
+        #ff4d7d
+    );
+
+    transition:.35s;
+
+    box-shadow:
+    0 15px 30px
+    rgba(255,90,150,.35);
+}
+
+.birthday-page .next-btn:hover {
+    transform:
+
+translateY(-5px)
+scale(1.05);
+
+box-shadow:
+
+0 22px 40px
+rgba(255,90,150,.45);
+}
+
+.birthday-page .next-btn:active {
+    transform: scale(.96);
+}
+
+/* ===========================
+   Decorations
+=========================== */
+
+.birthday-page .top-right {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 90px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.birthday-page .bottom-left {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    font-size: 90px;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* ===========================
+   Floating Hearts
+=========================== */
+
+.birthday-page .heart {
+    position: absolute;
+    font-size: 28px;
+    opacity: .3;
+    animation: float 8s infinite ease-in-out;
+}
+
+.birthday-page .heart1 {
+    top: 10%;
+    left: 12%;
+}
+
+.birthday-page .heart2 {
+    top: 20%;
+    right: 12%;
+}
+
+.birthday-page .heart3 {
+    bottom: 18%;
+    left: 18%;
+}
+
+.birthday-page .heart4 {
+    bottom: 12%;
+    right: 18%;
+}
+
+/* ===========================
+   Animations
+=========================== */
+
+@keyframes popIn {
+
+    from {
+        opacity: 0;
+        transform: scale(.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
