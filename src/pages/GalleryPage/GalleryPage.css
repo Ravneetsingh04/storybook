@@ -231,3 +231,96 @@
     opacity:0;
 
 }
+
+/* ===========================
+   Gallery Responsive
+=========================== */
+
+@media (max-width: 768px){
+
+    .gallery-page{
+        padding:30px 15px;
+    }
+
+    .gallery-counter{
+        padding:10px 22px;
+        font-size:16px;
+        margin:15px 0;
+    }
+
+    .gallery-carousel{
+        width:100%;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    /* Hide side previews */
+    .gallery-preview{
+        display:none;
+    }
+
+    .gallery-center{
+        width:100%;
+        max-width:100%;
+    }
+
+    /* Navigation buttons below card */
+    .gallery-nav{
+        position:static;
+        width:55px;
+        height:55px;
+        font-size:28px;
+    }
+
+    .gallery-nav.left,
+    .gallery-nav.right{
+        left:auto;
+        right:auto;
+    }
+
+    .gallery-buttons{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        width:100%;
+        margin-top:30px;
+    }
+
+    .gallery-buttons button{
+        width:100%;
+        max-width:260px;
+        padding:14px 20px;
+        font-size:17px;
+    }
+
+    .gallery-carousel.slide-left,
+    .gallery-carousel.slide-right{
+        transform:none;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .gallery-page{
+        padding:20px 10px;
+    }
+
+    .gallery-counter{
+        font-size:15px;
+        padding:8px 18px;
+    }
+
+    .gallery-nav{
+        width:48px;
+        height:48px;
+        font-size:24px;
+    }
+
+    .gallery-buttons button{
+        max-width:220px;
+        padding:13px 18px;
+        font-size:16px;
+    }
+
+}

@@ -115,3 +115,75 @@
     cursor:not-allowed;
 
 }
+
+/* ===========================
+   VIP Page Responsive
+=========================== */
+@media (max-width: 768px) {
+
+    .vip-page{
+        padding: 40px 20px;
+    }
+
+    .vip-page h1{
+        font-size: 36px;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .vip-progress{
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .vip-progress h2{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .vip-progress span{
+        font-size: 15px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .vip-buttons{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+        margin-top: 35px;
+    }
+
+    .vip-buttons button{
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 20px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .vip-page{
+        padding: 30px 15px;
+    }
+
+    .vip-page h1{
+        font-size: 28px;
+    }
+
+    .vip-progress h2{
+        font-size: 20px;
+    }
+
+    .vip-progress span{
+        font-size: 14px;
+    }
+
+    .vip-buttons button{
+        max-width: 240px;
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+}

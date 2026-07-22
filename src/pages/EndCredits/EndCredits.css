@@ -102,3 +102,115 @@
     transform: scale(1.08);
     box-shadow: 0 0 25px rgba(255,255,255,0.5);
 }
+
+/* ===========================
+   End Credits Responsive
+=========================== */
+
+@media (max-width: 768px){
+
+    .credits{
+        font-size:1.5rem;
+        line-height:2.6rem;
+        padding:0 30px;
+        letter-spacing:1px;
+    }
+
+    .credits p{
+        margin:12px 0;
+    }
+
+    .the-end h1{
+        font-size:4rem;
+        letter-spacing:6px;
+        text-align:center;
+    }
+
+    .the-end p{
+        font-size:1.3rem;
+        text-align:center;
+        padding:0 20px;
+    }
+
+    .the-end span{
+        font-size:1rem;
+        text-align:center;
+    }
+
+    .the-end small{
+        font-size:0.9rem;
+        text-align:center;
+        padding:0 20px;
+    }
+
+    .restart-btn{
+        padding:14px 32px;
+        font-size:1rem;
+        margin-top:35px;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .credits{
+        font-size:1.1rem;
+        line-height:2rem;
+        padding:0 18px;
+        letter-spacing:.5px;
+    }
+
+    .credits p{
+        margin:10px 0;
+    }
+
+    .the-end h1{
+        font-size:2.8rem;
+        letter-spacing:4px;
+    }
+
+    .the-end p{
+        font-size:1rem;
+        padding:0 15px;
+    }
+
+    .the-end span{
+        font-size:0.9rem;
+    }
+
+    .the-end small{
+        font-size:0.8rem;
+    }
+
+    .restart-btn{
+        width:90%;
+        max-width:260px;
+        padding:13px;
+        font-size:0.95rem;
+    }
+
+}
+
+@media (max-width: 360px){
+
+    .credits{
+        font-size:1rem;
+        line-height:1.8rem;
+        padding:0 12px;
+    }
+
+    .the-end h1{
+        font-size:2.3rem;
+        letter-spacing:2px;
+    }
+
+    .the-end p{
+        font-size:0.9rem;
+    }
+
+    .restart-btn{
+        max-width:220px;
+        font-size:0.9rem;
+    }
+
+}

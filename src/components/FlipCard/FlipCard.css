@@ -174,3 +174,165 @@
     width:0;
 
 }
+
+/* ===========================
+   VIP Flip Card Responsive
+=========================== */
+
+@media (max-width: 768px){
+
+    .flip-card{
+        width:100%;
+        max-width:380px;
+        height:640px;
+        min-height:640px;
+    }
+
+    .flip-card-inner{
+        min-height:640px;
+    }
+
+    .flip-card-front,
+    .flip-card-back{
+        min-height:640px;
+        border-radius:20px;
+    }
+
+    .flip-card-front{
+        padding:30px 22px;
+    }
+
+    .flip-card-front h2{
+        font-size:30px;
+        line-height:1.3;
+    }
+
+    .flip-card-front p{
+        font-size:18px;
+        line-height:1.7;
+        margin:20px 0;
+    }
+
+    .vip-image,
+    .vip-video{
+        height:260px;
+        border-radius:16px;
+    }
+
+    .flip-card-back{
+        padding:18px;
+    }
+
+    .flip-card-back h2{
+        font-size:26px;
+        margin-top:16px;
+    }
+
+    .flip-card-back h4{
+        font-size:16px;
+        margin:8px 0 15px;
+    }
+
+    .flip-card-back p{
+        font-size:16px;
+        line-height:1.6;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .flip-card{
+        max-width:320px;
+        height:560px;
+        min-height:560px;
+    }
+
+    .flip-card-inner{
+        min-height:560px;
+    }
+
+    .flip-card-front,
+    .flip-card-back{
+        min-height:560px;
+        border-radius:18px;
+    }
+
+    .flip-card-front{
+        padding:22px 16px;
+    }
+
+    .flip-card-front h2{
+        font-size:24px;
+    }
+
+    .flip-card-front p{
+        font-size:15px;
+        line-height:1.6;
+        margin:16px 0;
+    }
+
+    .vip-image,
+    .vip-video{
+        height:200px;
+        border-radius:14px;
+    }
+
+    .flip-card-back{
+        padding:15px;
+    }
+
+    .flip-card-back h2{
+        font-size:22px;
+    }
+
+    .flip-card-back h4{
+        font-size:14px;
+    }
+
+    .flip-card-back p{
+        font-size:14px;
+        line-height:1.5;
+    }
+
+}
+
+@media (max-width: 360px){
+
+    .flip-card{
+        max-width:280px;
+        height:500px;
+        min-height:500px;
+    }
+
+    .flip-card-inner{
+        min-height:500px;
+    }
+
+    .flip-card-front,
+    .flip-card-back{
+        min-height:500px;
+    }
+
+    .flip-card-front h2{
+        font-size:20px;
+    }
+
+    .flip-card-front p{
+        font-size:14px;
+    }
+
+    .vip-image,
+    .vip-video{
+        height:170px;
+    }
+
+    .flip-card-back h2{
+        font-size:20px;
+    }
+
+    .flip-card-back p{
+        font-size:13px;
+    }
+
+}

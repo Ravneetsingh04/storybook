@@ -342,3 +342,134 @@ rgba(255,90,150,.45);
     }
 
 }
+
+/* ===========================
+   Birthday Page Responsive
+=========================== */
+
+@media (max-width: 768px){
+
+    .birthday-page{
+        padding:30px 20px;
+        min-height:100vh;
+    }
+
+    .birthday-page .birthday-title{
+        font-size:48px;
+        line-height:1.2;
+    }
+
+    .birthday-page .birthday-image{
+        width:100%;
+        max-width:500px;
+        max-height:50vh;
+        margin:25px auto;
+    }
+
+    .birthday-page .birthday-message{
+        font-size:18px;
+        padding:0 15px;
+        line-height:1.6;
+    }
+
+    .birthday-page .next-btn{
+        width:100%;
+        max-width:280px;
+        padding:15px 22px;
+        font-size:18px;
+    }
+
+    .birthday-page .top-right,
+    .birthday-page .bottom-left{
+        font-size:60px;
+    }
+
+    .birthday-page .top-right{
+        top:15px;
+        right:15px;
+    }
+
+    .birthday-page .bottom-left{
+        left:15px;
+        bottom:15px;
+    }
+
+    .sparkle{
+        font-size:22px;
+    }
+
+    .birthday-page .heart{
+        font-size:22px;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .birthday-page{
+        padding:20px 15px;
+    }
+
+    .birthday-page .birthday-title{
+        font-size:34px;
+        line-height:1.25;
+    }
+
+    .birthday-page .birthday-image{
+        width:100%;
+        max-width:320px;
+        max-height:40vh;
+        border-radius:18px;
+    }
+
+    .birthday-page .birthday-message{
+        font-size:16px;
+        line-height:1.5;
+        margin-top:15px;
+    }
+
+    .birthday-page .next-btn{
+        width:100%;
+        max-width:220px;
+        padding:14px 18px;
+        font-size:16px;
+    }
+
+    .birthday-page .top-right,
+    .birthday-page .bottom-left{
+        font-size:42px;
+    }
+
+    .sparkle{
+        font-size:18px;
+        opacity:.6;
+    }
+
+    .birthday-page .heart{
+        font-size:18px;
+        opacity:.25;
+    }
+
+}
+
+@media (max-width: 360px){
+
+    .birthday-page .birthday-title{
+        font-size:28px;
+    }
+
+    .birthday-page .birthday-message{
+        font-size:15px;
+    }
+
+    .birthday-page .birthday-image{
+        max-width:280px;
+    }
+
+    .birthday-page .next-btn{
+        max-width:200px;
+        font-size:15px;
+        padding:13px 16px;
+    }
+
+}
