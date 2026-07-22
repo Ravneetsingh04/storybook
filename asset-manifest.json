@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/storybook/static/css/main.40e0f130.css",
-    "main.js": "/storybook/static/js/main.2ecf4ac2.js",
+    "main.js": "/storybook/static/js/main.2545aef9.js",
     "static/media/me1.mp4": "/storybook/static/media/me1.56081b9e8826bf86b90a.mp4",
     "static/media/bhabhi1.mp4": "/storybook/static/media/bhabhi1.bc742d762411294becf1.mp4",
     "static/media/bhai1.mp4": "/storybook/static/media/bhai1.8c47dff83ab5ca6d7cb6.mp4",
@@ -45,11 +45,11 @@
     "static/media/whiteDress.JPG": "/storybook/static/media/whiteDress.abc3bac058a43e8213fe.JPG",
     "static/media/eyes.mp3": "/storybook/static/media/eyes.87a1252e659d75dd4c30.mp3",
     "static/media/taiji1.JPG": "/storybook/static/media/taiji1.2347dbf0578f7327ce1c.JPG",
+    "static/media/watermelon.mp3": "/storybook/static/media/watermelon.2a117abcaee74034a28b.mp3",
     "static/media/avi1.JPG": "/storybook/static/media/avi1.fe5f81e0ad0698903321.JPG",
     "static/media/tikka.mp3": "/storybook/static/media/tikka.546258ff563f690aad31.mp3",
     "static/media/proper_patola.mp3": "/storybook/static/media/proper_patola.60a580b12a977c4fecbd.mp3",
     "static/media/car.JPG": "/storybook/static/media/car.33da282baa9a34c56d5e.JPG",
-    "static/media/watermelon.m4a": "/storybook/static/media/watermelon.43f87af1995c3727da59.m4a",
     "static/media/black_saaree.JPG": "/storybook/static/media/black_saaree.d8d892ec21df5f797926.JPG",
     "static/media/saaree.jpg": "/storybook/static/media/saaree.43ad6933b51cd1763842.jpg",
     "static/media/tanktop2.JPG": "/storybook/static/media/tanktop2.579e64f71f7570c1ba20.JPG",
@@ -60,10 +60,10 @@
     "static/media/maamu1.JPG": "/storybook/static/media/maamu1.a1b98715bf23179058aa.JPG",
     "index.html": "/storybook/index.html",
     "main.40e0f130.css.map": "/storybook/static/css/main.40e0f130.css.map",
-    "main.2ecf4ac2.js.map": "/storybook/static/js/main.2ecf4ac2.js.map"
+    "main.2545aef9.js.map": "/storybook/static/js/main.2545aef9.js.map"
   },
   "entrypoints": [
     "static/css/main.40e0f130.css",
-    "static/js/main.2ecf4ac2.js"
+    "static/js/main.2545aef9.js"
   ]
 }
