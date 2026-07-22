@@ -351,4 +351,104 @@ transform:scale(.94);
 }
 
 
+/* ===========================
+   Mobile Responsive
+=========================== */
+@media (max-width: 768px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .lockscreen{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 25px 20px;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  .photo-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .polaroid{
+    width: 220px;
+    transform: rotate(-2deg);
+  }
+
+  .polaroid:hover{
+    transform: rotate(-2deg) scale(1.03);
+  }
+
+  .polaroid img{
+    height: 280px;
+  }
+
+  .polaroid p{
+    font-size: 18px;
+  }
+
+  .flower{
+    font-size: 45px;
+    top: -25px;
+    left: -15px;
+  }
+
+  .passcode-section{
+    width: 100%;
+  }
+
+  .passcode-section h1{
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .subtitle{
+    font-size: 15px;
+    margin-bottom: 25px;
+    padding: 0 20px;
+  }
+
+  .display{
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .box{
+    width: 48px;
+    height: 48px;
+  }
+
+  .passcode-dot{
+    width: 14px;
+    height: 14px;
+  }
+
+  .keypad{
+    width: 220px;
+    gap: 14px;
+    justify-content: center;
+  }
+
+  .keypad button{
+    width: 58px;
+    height: 58px;
+    font-size: 24px;
+  }
+
+  .message{
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .heart{
+    font-size: 22px;
+  }
+}
+
 
