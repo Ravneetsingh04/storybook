@@ -15,7 +15,7 @@ import image15 from "../assets/blue.JPG";
 import black_saaree from "../assets/black_saaree.JPG";
 import tankTopSong from "../assets/nasha.mp3";
 import eyes from "../assets/eyes.mp3";
-import watermelon from "../assets/watermelon.m4a";
+import watermelon from "../assets/watermelon.mp3";
 import tikka from "../assets/tikka.mp3";
 import gulaab from "../assets/gulaab.mp3";
 import perfect from "../assets/perfect.mp3";
