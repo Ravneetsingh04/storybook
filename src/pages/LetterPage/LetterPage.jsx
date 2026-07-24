@@ -170,7 +170,7 @@ export default function LetterPage({ previousPage, nextPage }) {
     setOpened(true);
 
     if (audioRef.current) {
-      audioRef.current.volume = 0.15;
+      audioRef.current.volume = 0.60;
       audioRef.current.play().catch((err) => {
         console.log(err);
       });
